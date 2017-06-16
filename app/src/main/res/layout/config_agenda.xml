@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
+=======
+>>>>>>> origin/master
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,8 +19,12 @@
         android:hapticFeedbackEnabled="false"
         android:headerBackground="@android:color/holo_blue_dark"
         android:keepScreenOn="false"
+<<<<<<< HEAD
         android:numbersSelectorColor="@android:color/holo_blue_dark"
         tools:ignore="UnusedAttribute" />
+=======
+        android:numbersSelectorColor="@android:color/holo_blue_dark" />
+>>>>>>> origin/master
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,12 +39,20 @@
 
             <TextView
                 android:id="@+id/textView"
+<<<<<<< HEAD
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:text="Linha:"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
+=======
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:text="Linha:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+>>>>>>> origin/master
 
             <TextView
                 android:id="@+id/txtLinha"
@@ -55,12 +70,20 @@
 
             <TextView
                 android:id="@+id/textView3"
+<<<<<<< HEAD
                 android:layout_width="172dp"
                 android:layout_height="wrap_content"
                 android:text="Tempo de espera:"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
+=======
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:text="Tempo de espera:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+>>>>>>> origin/master
 
             <TextView
                 android:id="@+id/txtTempEspera"
