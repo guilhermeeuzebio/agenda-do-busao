@@ -59,10 +59,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         txtLinha = (EditText) findViewById(R.id.txtLinha);
+        Data h = new Data();
 
         public void pesquisar(View view) {
             for(Data d : dados){
-                if(dados.equals(dataHora)){
+                if(dados.equals(h.getDataHora())){
 
                 }
             }

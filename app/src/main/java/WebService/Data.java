@@ -14,6 +14,8 @@ public class Data {
     private int velocidade;
 
 
+
+
     public String getDataHora() {
         return dataHora;
     }
