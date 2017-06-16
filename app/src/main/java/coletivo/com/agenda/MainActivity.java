@@ -6,6 +6,8 @@ import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -22,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private EditText txtLinha;
     private Data[] dados;
 
     @Override
@@ -51,14 +53,20 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<RetornoWSTempoReal> call, Throwable t) {
-                Log.d(Constants.PACKAGE_NAME,"falha ao recuperar webservice"+t.getLocalizedMessage());
+                Log.d(Constants.PACKAGE_NAME, "falha ao recuperar webservice" + t.getLocalizedMessage());
                 t.printStackTrace();
             }
         });
 
-        Intent intent = new Intent("Alarme Disparado");
-        PendingIntent p = PendingIntent.getBroadcast(this, 0, intent, 0);
+        txtLinha = (EditText) findViewById(R.id.txtLinha);
 
+        public void pesquisar(View view) {
+            for(dados: ){
+                if(dados.equals(dataHora)){
 
+                }
+            }
+        }
     }
 }
+Udacity catalog
