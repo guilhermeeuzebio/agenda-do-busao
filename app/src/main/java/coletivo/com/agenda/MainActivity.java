@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         txtLinha = (EditText) findViewById(R.id.txtLinha);
 
         public void pesquisar(View view) {
-            for(dados: ){
+            for(Data d : dados){
                 if(dados.equals(dataHora)){
 
                 }
@@ -69,4 +69,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-Udacity catalog
+    UdacityCatalog catalog = response.body();
+    for(Course c : catalog.courses){
+
+        }
