@@ -25,12 +25,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private EditText txtLinha;
+
+
+
+
+
     private Data[] dados;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_maps);
 
 
         GsonBuilder gsonBuilder = new GsonBuilder();
