@@ -9,7 +9,7 @@ public class ConversoDistancia {
 
     public static double distance(double latitude1, double latitude2, double longetude1, double longetude2) {
 
-        final int R = 6371; // Radius of the earth
+        final int R = 6371; // raio da terra
 
         double latDistance = Math.toRadians(latitude2 - latitude1); // convertendo para radianos
 
