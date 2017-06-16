@@ -67,9 +67,4 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-    }
 }
-    UdacityCatalog catalog = response.body();
-    for(Course c : catalog.courses){
-
-        }
