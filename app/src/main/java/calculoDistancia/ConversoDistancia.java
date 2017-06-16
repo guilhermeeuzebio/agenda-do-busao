@@ -13,7 +13,7 @@ public class ConversoDistancia {
 
         double latDistance = Math.toRadians(latitude2 - latitude1); // convertendo para radianos
 
-        double lonDistance = Math.toRadians(longetude2 - longetude1);
+        double lonDistance = Math.toRadians(longetude2 - longetude1);// convertendo para radianos
 
         double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)  //calculo da distancia entre dois pontos
                 + Math.cos(Math.toRadians(latitude1)) * Math.cos(Math.toRadians(latitude2))
