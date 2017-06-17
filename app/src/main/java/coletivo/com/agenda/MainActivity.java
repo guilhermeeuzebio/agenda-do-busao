@@ -101,11 +101,18 @@ public class MainActivity extends AppCompatActivity {
 
         public void pesquisar(View view) {   //esta parando o APP
             for (Data d : dados) {
-                if (d.equals(txtLinha)) {
+                if (d!=null)
+                    if (d.getDataHora().equals(txtLinha)) {
                   //  TextView horario = (TextView)findViewById(R.id.horarios);
                    // horario.setText(d.getDataHora());
                 }
             }
         }
+
+        public void mapa (View view){
+            setContentView(R.layout.activity_maps);
+        }
+
+
 }
 

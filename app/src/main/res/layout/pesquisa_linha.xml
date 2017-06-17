@@ -130,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="270dp"
                 android:layout_weight="0.04"
+                android:onClick="mapa"
                 android:background="@color/common_google_signin_btn_text_dark_default"
                 android:text="331"
                 android:textSize="20sp" />
