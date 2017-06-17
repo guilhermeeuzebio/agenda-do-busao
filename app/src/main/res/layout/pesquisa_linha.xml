@@ -49,6 +49,7 @@
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="100dp"
                 android:layout_marginTop="10dp"
+                android:onClick="pesquisar"
                 android:text="Pesquisar"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText" />

@@ -85,14 +85,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        public void entrar(){
+        public void entrar(View view){
+            setContentView(R.layout.pesquisa_linha);
 
         }
 
         public void pesquisar(View view) {
             for (Data d : dados) {
                 if (d.equals(txtLinha)) {
-
+                    
                 }
             }
         }
