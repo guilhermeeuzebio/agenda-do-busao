@@ -110,7 +110,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void mapa (View view){
-            setContentView(R.layout.activity_maps);
+            Intent it = new Intent(this,MapsActivity.class);
+            startActivity(it);
         }
 
 
