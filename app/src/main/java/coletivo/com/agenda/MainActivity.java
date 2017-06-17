@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtLinha;
 
 
-
-
-
     private Data[] dados;
 
     @Override
@@ -64,13 +61,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         txtLinha = (EditText) findViewById(R.id.txtLinha);
-        Data h = new Data();
 
+    }
         public void pesquisar(View view) {
-            for(Data d : dados){
-                if(dados.equals(h.getDataHora())){
+            for (Data d : dados) {
+                if (d.equals(txtLinha)) {
 
                 }
             }
         }
 }
+
