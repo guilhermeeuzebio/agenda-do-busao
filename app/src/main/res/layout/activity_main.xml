@@ -27,26 +27,8 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-        <Button
-            android:id="@+id/btnEntrar"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/roundcorner"
-            android:text="Entrar"
-            android:textColor="@android:color/background_light"
-            android:textSize="20sp"
-            android:onClick="entrar"
-            tools:ignore="HardcodedText"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="464dp" />
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
-
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnEntrar"
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:layout_marginBottom="40dp"
