@@ -2,6 +2,7 @@ package coletivo.com.agenda;
 
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.provider.CalendarContract;
 import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.EditText;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.util.Calendar;
 
 import WebService.Data;
 import WebService.RetornoWSTempoReal;
@@ -63,6 +66,29 @@ public class MainActivity extends AppCompatActivity {
         txtLinha = (EditText) findViewById(R.id.txtLinha);
 
     }
+
+        public void agenda(){
+            Calendar beginTime = Calendar.getInstance();
+            beginTime.set(2017,6,17,6,30);
+
+            Calendar endTime = Calendar.getInstance();
+            endTime.set(2017,6,17,6,30);
+
+            Intent intent = new Intent(Intent.ACTION_INSERT)
+                    .setData(CalendarContract.Events.CONTENT_URI)
+                    .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
+                    .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
+                    .putExtra(CalendarContract.Events.TITLE, "Linha 355.1")
+                    .putExtra(CalendarContract.Events.EVENT_LOCATION, "Parada de onibus")
+                    .putExtra(CalendarContract.Events.AVAILABILITY, CalendarContract.Events.AVAILABILITY_FREE);
+            startActivity(intent);
+
+        }
+
+        public void entrar(){
+            
+        }
+
         public void pesquisar(View view) {
             for (Data d : dados) {
                 if (d.equals(txtLinha)) {
