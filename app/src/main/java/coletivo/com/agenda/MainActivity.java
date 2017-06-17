@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -90,10 +91,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        public void pesquisar(View view) {
+        public void agendar(View view){
+            setContentView(R.layout.config_agenda);
+        }
+
+        public void pesquisar(View view) {   //esta parando o APP
             for (Data d : dados) {
                 if (d.equals(txtLinha)) {
-                    
+                    TextView horario = (TextView)findViewById(R.id.horarios);
+                    horario.setText(d.getDataHora());
                 }
             }
         }

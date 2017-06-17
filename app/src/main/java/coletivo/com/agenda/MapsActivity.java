@@ -20,24 +20,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toast.makeText(this,"Teste Tela", Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_maps);
-        initMap();
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.mapFragment);
+        mapFragment.getMapAsync(this);
+
     }
-
-        public void initMap(){
-
-            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.mapFragment);
-            mapFragment.getMapAsync(this);
-
-        }
 
     public void onMapReady(GoogleMap googleMap) {
         mMap =  googleMap;
-        goToLocation(-15.7929143,-47.88425446);
+        LatLng sydney = new LatLng(-15.7929143,-47.88425446);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Algum lugar"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
-
+/*
     public void goToLocation(double lat, double lng) {
         LatLng ll = new LatLng(lat, lng);
         CameraUpdate update = CameraUpdateFactory.newLatLng(ll);
@@ -51,6 +47,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-        }
+        } */
     }
 
