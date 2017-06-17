@@ -15,10 +15,11 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
         android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
 
             <TextView
                 android:id="@+id/textViewLinha"
-                android:layout_width="194dp"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:text="Linha de ônibus:"
                 android:textSize="20sp"
@@ -38,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -59,7 +60,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp" />
+                android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calendario"
+        android:text="Agendar Despertador"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+
+        />
+
 </LinearLayout>

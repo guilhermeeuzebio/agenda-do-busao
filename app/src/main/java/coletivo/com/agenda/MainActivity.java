@@ -95,11 +95,15 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.config_agenda);
         }
 
+        public void calendario(View view){
+            agenda();
+        }
+
         public void pesquisar(View view) {   //esta parando o APP
             for (Data d : dados) {
                 if (d.equals(txtLinha)) {
-                    TextView horario = (TextView)findViewById(R.id.horarios);
-                    horario.setText(d.getDataHora());
+                  //  TextView horario = (TextView)findViewById(R.id.horarios);
+                   // horario.setText(d.getDataHora());
                 }
             }
         }
