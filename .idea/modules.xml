@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/agenda-do-busao.iml" filepath="$PROJECT_DIR$/agenda-do-busao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Agenda.iml" filepath="$PROJECT_DIR$/Agenda.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-agenda-do-busao.iml" filepath="$PROJECT_DIR$/new-agenda-do-busao.iml" />
     </modules>
   </component>
 </project>
