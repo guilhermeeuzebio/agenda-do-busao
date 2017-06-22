@@ -26,6 +26,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import static coletivo.com.agenda.R.layout.activity_maps;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText txtLinha;
